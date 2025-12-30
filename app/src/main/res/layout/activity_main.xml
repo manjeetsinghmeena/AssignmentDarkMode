@@ -277,7 +277,7 @@
                         android:paddingHorizontal="22dp"
                         android:text="Verify"
                         android:textColor="@android:color/white"
-                        android:textSize="16sp"
+                        android:textSize="17sp"
                         app:backgroundTint="@null"
                         app:cornerRadius="10dp" />
                 </LinearLayout>
