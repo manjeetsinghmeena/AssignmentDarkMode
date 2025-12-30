@@ -80,7 +80,7 @@ class MainActivity : AppCompatActivity() {
         val btnContinue = findViewById<Button>(R.id.btnContinue)
         btnContinue.setOnClickListener {
             if(!isVerified){
-                tvStatus.text = "Please verify first"
+                tvStatus.text= "Please verify first"
                 tvStatus.setTextColor(
                     resources.getColor(android.R.color.holo_red_dark)
                 )

@@ -171,7 +171,7 @@
                 android:layout_marginTop="4dp"
                 app:boxCornerRadiusBottomEnd="12dp"
                 app:boxCornerRadiusBottomStart="12dp"
-                app:boxCornerRadiusTopEnd="12dp"
+                app:boxCornerRadiusTopEnd= "12dp"
                 app:boxCornerRadiusTopStart="12dp"
                 app:boxStrokeColor="@color/white"
                 app:boxStrokeWidth="1dp"
