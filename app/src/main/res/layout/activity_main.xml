@@ -10,18 +10,18 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:cardBackgroundColor="#32000000"
-        app:cardElevation="4dp">
+        app:cardBackgroundColor="#00FFFFFF"
+        app:cardElevation="2dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-condensed-light"
-            android:padding="16dp"
+            android:padding="11dp"
             android:text="Profile Setup"
             android:textColor="@android:color/white"
             android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:fontFamily="@font/font5"/>
 
     </androidx.cardview.widget.CardView>
 
@@ -39,11 +39,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/font1"
-                android:text="Welcome!!"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/font6"
+                android:text="Welcome!!!"
                 android:textColor="@android:color/white"
-                android:textSize="30sp"
+                android:textSize="32sp"
                 android:textStyle="bold" />
 
             <TextView
@@ -59,12 +59,26 @@
                 android:layout_width="118dp"
                 android:layout_height="117dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="32dp"
-                android:layout_marginBottom="3dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="0dp"
                 android:background="@drawable/bg_profile_image"
                 android:padding="26dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/userr" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:cardBackgroundColor="#1AFFFFFF"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -211,6 +225,10 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
+
+        </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -270,7 +288,7 @@
                 android:id="@+id/btnContinue"
                 android:layout_width="match_parent"
                 android:layout_height="56dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginTop="50dp"
                 android:background="@drawable/gradient_button"
                 android:text="Continue"
                 android:textColor="@android:color/white"

@@ -27,7 +27,7 @@ class SecondActivity : AppCompatActivity() {
         tvName.text = "Name: $name"
         tvAge.text = "Age: $age"
         tvNumber.text = "Phone Number: $number"
-        tvMail.text = "EMail: $mail"
+        tvMail.text = "Emaiil: $mail"
 
     }
 }
