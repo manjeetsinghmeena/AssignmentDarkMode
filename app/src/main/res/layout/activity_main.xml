@@ -255,9 +255,9 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Verification Status"
-                            android:textColor="#CCD0CF"
+                            android:textColor="#E6E3E3"
                             android:textSize="16sp"
-                            android:textStyle="bold" />
+                            android:textStyle="bold"/>
 
                         <TextView
                             android:id="@+id/tvStatus"
