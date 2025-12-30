@@ -19,6 +19,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         val etName = findViewById<EditText>(R.id.etName)
         val etAge = findViewById<EditText>(R.id.etAge)
+        val etNumber = findViewById<EditText>(R.id.etNumber)
+        val etMail = findViewById<EditText>(R.id.etMail)
         val btnVerify = findViewById<Button>(R.id.btnVerify)
         val tvStatus = findViewById<TextView>(R.id.tvStatus)
 
@@ -31,6 +33,8 @@ class MainActivity : AppCompatActivity() {
         }
         etName.addTextChangedListener { resetVerification() }
         etAge.addTextChangedListener { resetVerification() }
+        etNumber.addTextChangedListener { resetVerification() }
+        etMail.addTextChangedListener { resetVerification() }
 
         btnVerify.setOnClickListener {
             val name = etName.text.toString().trim()
@@ -43,6 +47,23 @@ class MainActivity : AppCompatActivity() {
                 etAge.error = "Age required"
                 return@setOnClickListener
             }
+            if (number.isEmpty()) {
+                etNumber.error = "Number required"
+                return@setOnClickListener
+            }
+            if (mail.isEmpty()) {
+                etMail.error = "Mail required"
+                return@setOnClickListener
+            }
+            if(!android.util.Patterns.EMAIL_ADDRESS.matcher(mail).matches()) {
+                etMail.error = "Enter valid mail"
+                return@setOnClickListener
+            }
+            if(number.length!=10) {
+                etNumber.error = "Enter valid number"
+                return@setOnClickListener
+            }
+
             val age = ageText.toInt()
             if(age<1 || age>120){
                 etAge.error = "Enter valid age"
@@ -64,6 +85,8 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SecondActivity::class.java)
             intent.putExtra("NAME", etName.text.toString().trim())
             intent.putExtra("AGE", etAge.text.toString().trim())
+            intent.putExtra("NUMBER", etNumber.text.toString().trim())
+            intent.putExtra("MAIL", etMail.text.toString().trim())
             startActivity(intent)
         }
     }
