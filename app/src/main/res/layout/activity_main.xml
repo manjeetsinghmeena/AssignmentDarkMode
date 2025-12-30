@@ -40,7 +40,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal|"
+                android:layout_gravity="center_horizontal|center"
                 android:layout_marginTop="6dp"
                 android:text="Complete your profile to continue"
                 android:textColor="#9E9E9E"
@@ -155,7 +155,7 @@
                 app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etAge"
+                    android:id="@+id/etNumber"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="Enter your 10 digit phone number"
@@ -191,11 +191,11 @@
                 app:hintEnabled="false">
 
                 <com.google.android.material.textfield.TextInputEditText
-                    android:id="@+id/etAge"
+                    android:id="@+id/etMail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="eg. xyz@gmail.com"
-                    android:inputType="number"
+                    android:inputType="textEmailAddress"
                     android:padding="16dp"
                     android:textColor="@color/white"
                     android:textColorHint="#A4A4A4" />

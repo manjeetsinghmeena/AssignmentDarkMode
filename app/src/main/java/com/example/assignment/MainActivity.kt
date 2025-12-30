@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.widget.addTextChangedListener
+import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
     private var isVerified = false
@@ -17,10 +18,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-        val etName = findViewById<EditText>(R.id.etName)
-        val etAge = findViewById<EditText>(R.id.etAge)
-        val etNumber = findViewById<EditText>(R.id.etNumber)
-        val etMail = findViewById<EditText>(R.id.etMail)
+        val etName = findViewById<TextInputEditText>(R.id.etName)
+        val etAge = findViewById<TextInputEditText>(R.id.etAge)
+        val etNumber = findViewById<TextInputEditText>(R.id.etNumber)
+        val etMail = findViewById<TextInputEditText>(R.id.etMail)
         val btnVerify = findViewById<Button>(R.id.btnVerify)
         val tvStatus = findViewById<TextView>(R.id.tvStatus)
 
@@ -39,6 +40,9 @@ class MainActivity : AppCompatActivity() {
         btnVerify.setOnClickListener {
             val name = etName.text.toString().trim()
             val ageText = etAge.text.toString().trim()
+            val number = etNumber.text.toString().trim()
+            val mail = etMail.text.toString().trim()
+
             if(name.isEmpty()){
                 etName.error = "Name required"
                 return@setOnClickListener
