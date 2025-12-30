@@ -15,6 +15,7 @@
         android:layout_marginLeft="10dp"
         android:textStyle="bold"
         android:textColor="@android:color/white"
+        android:fontFamily="sans-serif"
         android:layout_marginBottom="24dp"/>
 
     <TextView
@@ -25,7 +26,8 @@
         android:text="Profile Details"
         android:textColor="@android:color/white"
         android:textSize="22sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:fontFamily="@font/font1"/>
 
     <TextView
         android:id="@+id/tvName"
@@ -34,7 +36,8 @@
         android:layout_height="wrap_content"
         android:textSize="18sp"
         android:textColor="@color/white"
-        android:layout_marginBottom="12dp"/>
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/font1"/>
 
     <TextView
         android:id="@+id/tvAge"
@@ -42,6 +45,11 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal|center"
         android:textColor="@color/white"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:fontFamily="@font/font1" />
+    
+    <TextView
+        android:layout_width=""
+        android:layout_height=""
 
 </LinearLayout>
